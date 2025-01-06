@@ -1,0 +1,107 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 182, 193);
+    font-family: 'Montserrat';
+}
+
+p {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 182, 193);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: #28282b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#ready {
+    top: 20%;
+    position: fixed;
+    animation: fadeIn 1s linear;
+}
+
+#yousure {
+    position: fixed;
+    bottom: 20%;
+    display: none;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.quote {
+    color: #28282b;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#paragraph {
+    height: 100%;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: none;
+    color: #28282b;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
